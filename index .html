@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Dinesh - SQL Developer</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .project {
+            border-left: 5px solid #333;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>S. Dinesh</h1>
+        <p>SQL Developer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an aspiring SQL Developer with a strong foundation in database management, query optimization, and data analysis. I have experience in designing and managing SQL databases, writing complex queries, and ensuring data integrity.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Excel, Word</li>
+            <li>HTML, CSS</li>
+            <li>Python, SQL, MySQL</li>
+            <li>Windows OS</li>
+            <li>Problem-Solving, Team Collaboration</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Weigh Bridge Database Management System</h3>
+            <p>This project efficiently manages weighbridge operations, including recording vehicle weight data, generating reports, and ensuring accurate data storage.</p>
+            <a href="https://github.com/dinesh/weighbridge" target="_blank">GitHub Link</a>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>B.Tech in Information Technology - Sri Balaji Chockalingam Engineering College, Arni.</p>
+        <p>CGPA: 8.3</p>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Python - Besant Technologies, Velachery, Chennai</li>
+            <li>SQL - Besant Technologies, Velachery, Chennai</li>
+            <li>Oracle Certification</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:thanishdinesh63@gmail.com">thanishdinesh63@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918110999825">8110999825</a></p>
+        <p><a href="https://www.linkedin.com/in/dinesh-profile" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/dinesh-profile" target="_blank">GitHub</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 S. Dinesh. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll("nav ul li a");
+
+            links.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const targetSection = document.querySelector(this.getAttribute("href"));
+                    targetSection.scrollIntoView({ behavior: "smooth" });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
